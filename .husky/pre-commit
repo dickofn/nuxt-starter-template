@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Needed for this bug https://github.com/okonet/lint-staged/issues/1164
+if >/dev/console; then
+  exec >/dev/console 2>&1
+  npx lint-staged
+else
+  echo "Running lint-staged"
+  npx lint-staged -q
+fi
+
+
+
