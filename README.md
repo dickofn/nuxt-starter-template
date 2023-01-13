@@ -11,6 +11,7 @@ Make sure to install the dependencies:
 
 ```bash
 pnpm install
+pnpm prepare
 ```
 
 ### Development Server
