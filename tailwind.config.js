@@ -1,13 +1,17 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+/* eslint-disable @typescript-eslint/no-var-requires */
 const defaultTheme = require("tailwindcss/defaultTheme")
+const colors = require("tailwindcss/colors")
 
 /** @type {import('tailwindcss').Config} */
 export default {
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
+      },
       colors: {
-        primary: { ...colors.red, DEFAULT: defaultTheme.colors.red[500] },
+        primary: { ...colors.red, DEFAULT: colors.red[500] },
       },
     },
   },
