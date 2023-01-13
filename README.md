@@ -3,7 +3,7 @@
 Based on:
 
 -   [sidebase merino](https://sidebase.io/)
--   [nuxt3-template](https://github.com/weicheng2138/nuxt3-eslint-starter/)
+-   [nuxt3-eslint-starter](https://github.com/weicheng2138/nuxt3-eslint-starter/)
 
 ### Setup
 
