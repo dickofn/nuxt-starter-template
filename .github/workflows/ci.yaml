@@ -9,19 +9,24 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    strategy:
+      matrix:
+        node-version: [16]
     steps:
       - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7
 
-      - name: Use Node.js 16.14.2
+      - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          node-version: 16.14.2
+          node-version: ${{ matrix.node-version }}
+          cache: "pnpm"
 
-      - run: npm install
-
-      - run: npm ci
-
-      - run: npm run lint
-
-      - run: npm run build
+      - name: Install dependencies
+        run: pnpm install
+      - name: Lint codes
+        run: pnpm run lint
+      - name: Building application
+        run: pnpm run generate
