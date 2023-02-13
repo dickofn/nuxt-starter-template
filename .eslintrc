@@ -23,8 +23,9 @@
     "comma-dangle": ["error", "always-multiline"],
     "indent": "off",
     "@typescript-eslint/indent": ["error", 2],
-    "@typescript-eslint/type-annotation-spacing": ["warn"],
-    "nonblock-statement-body-position": ["error", "beside"],
-    "curly": ["error", "multi"]
+    "@typescript-eslint/type-annotation-spacing": ["error"],
+    "nonblock-statement-body-position": "error",
+    "curly": ["error", "multi-line"],
+    "keyword-spacing": "error"
   }
 }
