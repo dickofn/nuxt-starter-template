@@ -23,6 +23,8 @@
     "comma-dangle": ["error", "always-multiline"],
     "indent": "off",
     "@typescript-eslint/indent": ["error", 2],
-    "@typescript-eslint/type-annotation-spacing": ["warn"]
+    "@typescript-eslint/type-annotation-spacing": ["warn"],
+    "nonblock-statement-body-position": ["error", "beside"],
+    "curly": ["error", "multi"]
   }
 }
