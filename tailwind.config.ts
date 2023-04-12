@@ -7,7 +7,7 @@ export default <Partial<Config>>{
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Avenir Next", ...defaultTheme.fontFamily.sans],
+        sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
       },
       colors: {
         primary: { ...colors.red, DEFAULT: colors.red[500] },
