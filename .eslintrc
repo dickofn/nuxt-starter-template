@@ -4,7 +4,15 @@
     "browser": true,
     "node": true
   },
-  "extends": ["@nuxtjs/eslint-config-typescript"],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser"
+  },
+  "extends": [
+    "@nuxtjs/eslint-config-typescript",
+    "plugin:prettier/recommended",
+    "plugin:tailwindcss/recommended"
+  ],
   "overrides": [
     {
       "files": ["./server/**/*.ts"],
@@ -20,12 +28,18 @@
   ],
   "rules": {
     "quotes": ["error", "double"],
-    "comma-dangle": ["error", "always-multiline"],
     "indent": "off",
-    "@typescript-eslint/indent": ["error", 2],
-    "@typescript-eslint/type-annotation-spacing": ["error"],
-    "nonblock-statement-body-position": "error",
     "curly": ["error", "multi-line"],
-    "keyword-spacing": "error"
+    "keyword-spacing": "error",
+    "@typescript-eslint/indent": "off",
+    "@typescript-eslint/type-annotation-spacing": ["error"],
+    "prettier/prettier": [
+      "warn",
+      {
+        "semi": false,
+        "trailingComma": "es5"
+      }
+    ],
+    "tailwindcss/no-custom-classname": "off"
   }
 }

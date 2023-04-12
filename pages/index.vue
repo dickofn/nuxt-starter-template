@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-4xl text-primary">
+    <h1 class="text-primary text-4xl">
       {{ msg }}
     </h1>
   </div>
