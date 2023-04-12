@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxt/image-edge",
     "@nuxtjs/google-fonts",
+    "@nuxtjs/eslint-module",
   ],
   typescript: {
     shim: false,
