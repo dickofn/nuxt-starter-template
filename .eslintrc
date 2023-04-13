@@ -37,7 +37,8 @@
       "warn",
       {
         "semi": false,
-        "trailingComma": "es5"
+        "trailingComma": "es5",
+        "endOfLine": "auto"
       }
     ],
     "tailwindcss/no-custom-classname": "off"
