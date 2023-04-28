@@ -38,7 +38,8 @@
       {
         "semi": false,
         "trailingComma": "es5",
-        "endOfLine": "auto"
+        "endOfLine": "auto",
+        "htmlWhitespaceSensitivity": "ignore"
       }
     ],
     "tailwindcss/no-custom-classname": "off"
