@@ -25,5 +25,5 @@
     "*.css": "tailwindcss"
   },
   // Auto-complete `.value` attribute when volar is installed
-  "volar.autoCompleteRefs": true
+  "vue.autoInsert.dotValue": true
 }
