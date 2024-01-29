@@ -33,7 +33,8 @@
         "runtimeExecutable": "pnpm.cmd"
       },
       "outputCapture": "std",
-      "runtimeArgs": ["dev"]
+      "runtimeArgs": ["dev", "--host"],
+      "runtimeVersion": "20"
     }
   ],
   "compounds": [
