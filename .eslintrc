@@ -32,7 +32,7 @@
     "curly": ["error", "multi-line"],
     "keyword-spacing": "error",
     "@typescript-eslint/indent": "off",
-    "@typescript-eslint/type-annotation-spacing": ["error"],
+    "@typescript-eslint/type-annotation-spacing": "error",
     "prettier/prettier": [
       "warn",
       {
